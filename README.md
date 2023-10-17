@@ -39,9 +39,9 @@ Voici quelques points clés sur les web services SOAP :
 WSDL est un langage XML utilisé pour décrire les fonctionnalités d'un service web.
 Voici quelques points clés à retenir sur WSDL :
 
--Description : WSDL est utilisé pour documenter un service web en spécifiant les opérations qu'il expose, les types de données utilisés, les protocoles de communication, etc.
--Structuré : Les documents WSDL sont structurés de manière à définir clairement les entrées, les sorties et les méthodes du service.
--Consommation : Les clients de services web utilisent des fichiers WSDL pour comprendre comment interagir avec un service, ce qui facilite l'intégration et l'appel des fonctions du service.
+- Description : WSDL est utilisé pour documenter un service web en spécifiant les opérations qu'il expose, les types de données utilisés, les protocoles de communication, etc.
+- Structuré : Les documents WSDL sont structurés de manière à définir clairement les entrées, les sorties et les méthodes du service.
+- Consommation : Les clients de services web utilisent des fichiers WSDL pour comprendre comment interagir avec un service, ce qui facilite l'intégration et l'appel des fonctions du service.
 
 <img width="960" alt="wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/303fea28-1520-4488-ad31-99fa0fcda03a">
 
