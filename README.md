@@ -12,7 +12,8 @@ Le but de cette activite est de comprendre comment créer, déployer et utiliser
 4. Tester les opérations du web service avec un outil comme SoapUI ou Oxygen.
 5. Créer un Client SOAP Java.
 
-<img width="508" alt="Screenshot 2023-10-17 220836" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/33319177-70ee-4d20-b2aa-859dc2c6e1dc">
+<img width="508" alt="Screenshot 2023-10-17 220836" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/b896a4ad-1368-443b-b64c-cfd4718032dc">
+
 
 => Vidéo à utiliser comme ressource principale : https://www.youtube.com/watch?v=ig5UHI12HPs
 
@@ -30,8 +31,8 @@ Voici quelques points clés sur les web services SOAP :
 - Langage indépendant : Cela signifie que vous pouvez créer des web services SOAP en utilisant différents langages de programmation, tels que Java, C#, PHP, etc.
 - Complexité : Les web services SOAP sont souvent considérés comme plus verbeux et plus complexes que les web services basés sur REST (Representational State Transfer).
 
+![How+does+it+work+Service+Provider+Service+UDDI+Requester](https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/c7aa4249-09d1-4652-9f03-3a7ca593077d)
 
-![How+does+it+work+Service+Provider+Service+UDDI+Requester](https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/0f9e6300-79f3-47aa-ad3d-59081aed2522)
 
 ### WSDL - Web Services Description Language ### 
 
@@ -42,11 +43,11 @@ Voici quelques points clés à retenir sur WSDL :
 -Structuré : Les documents WSDL sont structurés de manière à définir clairement les entrées, les sorties et les méthodes du service.
 -Consommation : Les clients de services web utilisent des fichiers WSDL pour comprendre comment interagir avec un service, ce qui facilite l'intégration et l'appel des fonctions du service.
 
-<img width="960" alt="wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/2c2ef318-eea9-4c77-bc09-a2d166a47d45">
+<img width="960" alt="wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/303fea28-1520-4488-ad31-99fa0fcda03a">
 
 XSD (XML Schema Definition) est un langage XML utilisé pour définir la structure et les contraintes des données dans des documents XML. Il est souvent utilisé en relation avec WSDL (Web Services Description Language) pour définir la structure des messages échangés entre les clients et les services web, assurant ainsi la cohérence des données lors de la communication entre les différentes parties d'une application distribuée.
 
-<img width="960" alt="shema xsd" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/49b5b8ef-6bfa-47f2-8b07-a62224d8c7d1">
+<img width="960" alt="shema xsd" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/c208cdfe-cbda-497f-873b-3c29540bc681">
 
 ### UDDI - Universal Description, Discovery, and Integration ### 
 
@@ -74,31 +75,39 @@ Voici quelques points clés à retenir sur JAX-WS :
 - Sécurité : JAX-WS prend en charge divers mécanismes de sécurité, tels que WS-Security, pour sécuriser les communications entre les clients et les services web.
 - Avantages : JAX-WS simplifie la création de services web en Java en évitant la nécessité de générer manuellement du code XML, tout en fournissant une approche orientée objet pour la communication distante.
 
-![dep](https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/bf74cc39-7cce-4807-83d8-931645953095)
+![dep](https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/0b22835d-c46c-4f74-b5f4-d77a66e3aa1e)
 
 ## Le Web Service SOAP ##
 
 ### => Server ###
-<img width="960" alt="exec server" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/e8484446-35f9-45ac-b4fb-c708e3c8f065">
+<img width="960" alt="exec server" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/e102fde9-1a71-4bb3-9092-4ebe48068300">
+
 
 ### Test 1 : Convert() ###
-<img width="960" alt="1" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/8a7bc6e9-3d9b-48f1-89fc-b7905a5bca72">
+<img width="960" alt="1" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/9392be73-90f0-46c0-99b8-4f46d352e6a9">
+
 
 ### Test 2 : getCompte() ###
-<img width="960" alt="2" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/ef9eab04-3f02-424e-9b86-1623299d8012">
+<img width="960" alt="2" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/6aa9b76a-d79d-424b-b0dc-f5acacd62fd2">
+
 
 ### Test 3 : listComptes() ###
-<img width="960" alt="3" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/db11c39b-c1df-4382-86d9-b5a06e8855e2">
+<img width="960" alt="3" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/cd4a88d7-636e-4afd-8e74-9f00352dee80">
+
 
 ### Test 4 : getCompte() après l'annotation @XmlTransient sur l'attribut dateCreation  ###
-<img width="960" alt="after jaxb annotation no creation date" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/69a6f262-8b03-4e58-984c-ee849bb76489">
+<img width="960" alt="after jaxb annotation no creation date" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/ffcadc78-4d6a-4487-b1b0-cd13c9599fa5">
+
 
 ### => Client ###
 
 - Tout d'abord, il est nécessaire de créer un "proxy" qui nous permettra de consommer le service web : 
-<img width="735" alt="jakarta pluggin for function generate java code from wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/d0d9af0d-e259-4485-8136-4d5118b36ffa">
-<img width="960" alt="generate java code from wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/25b3d270-de55-4180-8897-e13a0826b2ab">
-<img width="328" alt="Screenshot 2023-10-16 205231" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/0475415e-f069-4c30-8695-666295478991">
+<img width="735" alt="jakarta pluggin for function generate java code from wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/e6d383f1-5018-4366-b2e7-a083be23205b">
+<img width="960" alt="generate java code from wsdl" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/35e19324-9af5-4170-9a2e-1101e8cc74ed">
+<img width="328" alt="Screenshot 2023-10-16 205231" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/acf34b4e-aa54-4aa6-80a7-e80a13716a64">
+<img width="960" alt="exec client" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/5c30612e-d811-4765-a1ce-8eb9b9e5ca0c">
 
-<img width="960" alt="exec client" src="https://github.com/Ikramouslih/SOAPWS-JAXWS/assets/60039200/18ec6c91-919a-4983-8522-bd712bbed65d">
+
+
+
 
